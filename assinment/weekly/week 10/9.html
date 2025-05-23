@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Sum and Product </title>
+  </head>
+  <body>
+    <div id="output"></div>
+    <script>
+      const numbers = [1, 2, 3, 4, 5];    
+      const sum = numbers.reduce(function(accumulator, currentValue) {
+        return accumulator + currentValue;
+      }, 0);    
+      const product = numbers.reduce(function(accumulator, currentValue) {
+        return accumulator * currentValue;
+      }, 1);
+      const outputDiv = document.getElementById("output");
+      outputDiv.innerHTML = "Sum: " + sum + "<br>" + "Product: " + product;
+    </script>
+  </body>
+</html>
